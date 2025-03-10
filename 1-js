@@ -1,0 +1,14 @@
+function validateForm() {
+2 var name = document.getElementById(’name’).value;
+3 var weight = document.getElementById(’weight’).value;
+4 var height = document.getElementById(’height’).value;
+5 if(name === "" || weight === "" || height === "") {
+6 alert("All fields are required.");
+7 return false;
+8 }
+9 if(isNaN(weight) || isNaN(height)) {
+10 alert("Weight and Height must be numbers.");
+11 return false;
+12 }
+13 return true;
+14 }
