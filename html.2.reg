@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+25 <html lang="en">
+26 <head>
+27 <meta charset="UTF-8">
+28 <title>BMI Calculator</title>
+29 <link rel="stylesheet" href="style.css">
+30 <script src="script.js"></script>
+31 </head>
+32 <body>
+33 <h1>BMI Calculator</h1>
+34 <?php if($result != "") { echo "<p>$result</p>"; } ?>
+35 <form action="" method="post" onsubmit="return validateForm();">
+36 <label for="name">Name:</label>
+37 <input type="text" id="name" name="name" required><br>
+38 <label for="weight">Weight (kg):</label>
+39 <input type="number" id="weight" name="weight" required><br>
+40 <label for="height">Height (m):</label>
+41 <input type="number" id="height" name="height" required><br>
+42 <input type="submit" value="Calculate">
+43 </form>
+44 </body>
+45 </html>
